@@ -3,7 +3,7 @@ const axios = require('axios');
 const getAuthUrl = () => {
   const base = "https://accounts.zoho.com/oauth/v2/auth";
   const params = new URLSearchParams({
-    scope: "ZohoCRM.modules.Contacts.READ",
+    scope: "ZohoCRM.modules.ALL",
     client_id: process.env.ZOHO_CLIENT_ID,
     response_type: "code",
     access_type: "offline",
